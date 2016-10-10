@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+  <title>Gift Guru</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+  <link rel="stylesheet" href="css/custom.css" type="text/css">
+  <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css" type="text/css">
+  <link rel="stylesheet" href="css/jquery.toastmessage.css" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css" type="text/css">
+  <script src="js/script.js" type="text/javascript"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js" type="text/javascript"></script>
+  <script src="js/jquery.toastmessage.js" type="text/javascript"></script>
+
+</head>
+
+<body>
+
+  <header>
+
+    <div class="w3-container"> <!-- Logo div -->
+
+      <h1 id="logo"><a class="no_line" href="index.html">GiftGuru</a></h1>
+
+      <span class="social_icons w3-hide-small">
+        <a href="https://www.twitter.com" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+        <a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+        <a href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+        <a href="https://www.pinterest.com" target="_blank"><i class="fa fa-pinterest-square" aria-hidden="true"></i></a>
+      </span>
+
+    </div>
+
+    <div id="full_navbar"> <!-- Navbar div -->
+
+      <nav>
+
+        <ul class="w3-navbar w3-large cust_navbar w3-left-align">
+            <li class="w3-hide-medium w3-hide-large w3-opennav w3-left">
+            <a class="w3-hover-red" href="javascript:void(0);" onclick="menuFunction()"><i class="fa fa-bars"></i></a></li>
+            <li class="w3-hide-small padd-left"><p></p></li>
+            <li class="w3-hide-small"><a class="w3-hover-red" href="index.html">Home</a></li>
+            <li class="w3-hide-small"><a class="w3-hover-red" href="store.html">Store</a></li>
+            <li class="w3-hide-small"><a class="w3-hover-red" href="about.html">About</a></li>
+            <li class="w3-hide-small"><a class="w3-hover-red w3-red" href="contact.html">Contact</a></li>
+            <li class="w3-hide-small w3-right padd-right"><p></p></li>
+            <li class="w3-hide-small w3-right w3-dropdown-hover w3-hover-red">
+              <a class="w3-hover-red"><img src="images/cart-icon.png" alt="Cart Icon"></a>
+                <div class="w3-dropdown-content w3-red w3-card-4">
+                  <h4 class="cart">Shopping Cart</h4>
+                  <p class="cart">Item 1</p>
+                  <p class="cart">Item 2</p>
+                  <p class="cart">Item 3</p>
+                  <a href="#" onclick="document.getElementById('checkout').style.display='block'" class="w3-hover-red"><p class="checkout w3-hover-red w3-wide">Checkout</p></a>
+                </div>
+            </li>
+            <li class="w3-hide-small w3-right">
+              <a href="#" onclick="document.getElementById('login').style.display='block'" class="w3-hover-red">Login</a>
+            </li>
+            <li class="w3-hide-small w3-right">
+              <form class="search">
+                <input type="search" name="search" placeholder="Search">
+              </form>
+            </li>
+        </ul>
+
+        <div id="demo" class="w3-hide w3-hide-large w3-hide-medium">
+            <ul class="w3-navbar w3-left-align w3-large">
+              <li><a class="w3-hover-red" href="index.html">Home</a></li>
+              <li><a class="w3-hover-red" href="store.html">Store</a></li>
+              <li><a class="w3-hover-red" href="about.html">About</a></li>
+              <li><a class="w3-hover-red w3-red" href="contact.html">Contact</a></li>
+              <li>
+                <a href="#" onclick="document.getElementById('login').style.display='block'" class="w3-hover-red">Login</a>
+              </li>
+              <li>
+                <a href="#" onclick="document.getElementById('checkout').style.display='block'" class="w3-hover-red">Cart</a>
+              </li>
+              <li><form class="search">
+                <input type="search" name="search" placeholder="Search">
+              </form></li>
+            </ul>
+        </div>
+
+      </nav>
+
+    </div>
+
+  </header>
+
+    <div class="w3-container"> <!-- Main body content div -->
+
+        <!-- Body Starts Here -->
+
+        <div id="name_error" class="contact_message"></div>
+        <div id="email_error" class="contact_message"></div>
+        <div id="message_error" class="contact_message"></div>
+
+        <div id="spacer">
+          <div id="wrap">
+            <h1 class="contact_h1">Contact GiftGuru</h1>
+
+            <form id="contactForm" autocomplete="on" onsubmit="return validateForm()">
+              <table>
+                <tr>
+                  <td><label for="name">Name:</label></td>
+                  <td><input class="contact_form" type="text" id="name" name="name" /></td>
+                </tr>
+                <tr>
+                  <td><label for="email">Email:</label></td>
+                  <td><input class="contact_form" type="text" id="email" name="email" autocomplete="off" /></td>
+                </tr>
+                <tr>
+                  <td><label for="message">Message:</label></td>
+                  <td><textarea class="contact_form" id="message" name="message" rows="5" cols="20"></textarea></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td><input class="contact_form" type="submit" value="Send!" id="send" /></td>
+                </tr>
+              </table>
+            </form>
+
+          </div>
+        </div>
+
+        <div id="map">
+    			<div class="row col-centered">
+    				<table style="width:100%">
+    				  <tr>
+    					<td><img src="images/map.png" style="width:65%;" alt="Location map"></td>
+    					<td><h2 class="contact_h2"> Contact Us </h2>
+    					<p class="address">Dublin, IE <br>
+    						Email:gift.guru@mail.com <br>
+    						Phone:+321 987654321</p></td>
+    					<td><img src="images/gifts.gif" style="width:65%;" alt="Gif"></td>
+    				  </tr>
+    				</table>
+    			</div>
+        </div>
+
+        <!-- Hidden Modal Items Below -->
+
+        <!--Login Modal -->
+        <div id="login" class="w3-modal">
+          <div class="w3-modal-content w3-card-8 w3-animate-zoom" style="max-width:600px">
+
+            <div class="w3-center"><br>
+              <span class="avatar"><i class="fa fa-user w3-circle w3-margin-top" style="width:30%" aria-hidden="true"></i></span>
+            </div>
+
+            <p id="username_error" class="w3-red w3-center"></p>
+            <p id="password_error" class="w3-red w3-center"></p>
+
+            <div class="w3-container">
+              <div class="w3-section">
+                <form onsubmit="return validateLogin()" method="post">
+                  <label><b>Username</b></label>
+                  <input id="username" class="w3-input w3-border w3-margin-bottom" type="text" placeholder="Enter Username">
+
+                  <label><b>Password</b></label>
+                  <input id="password" class="w3-input w3-border" type="text" placeholder="Enter Password">
+
+                  <button class="w3-btn w3-btn-block w3-green" type="submit">Login</button>
+                  <input class="w3-check w3-margin-top" type="checkbox" checked="checked"> Remember me
+                </form>
+              </div>
+            </div>
+
+            <div class="w3-container w3-border-top w3-padding-hor-16 w3-light-grey">
+              <button onclick="document.getElementById('login').style.display='none'" type="button" class="w3-btn w3-red">Cancel</button>
+              <span class="w3-right w3-padding w3-hide-small">Forgot <a href="#">password?</a></span>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Checkout Modal -->
+        <div id="checkout" class="w3-modal">
+          <div class="w3-modal-content">
+            <div class="w3-container">
+
+              <div class="w3-padding">
+
+                <ul class="w3-ul w3-card-4">
+                  <li class="w3-padding-hor-16 w3-hover-pale-red">
+                    <span onclick="this.parentElement.style.display='none'"
+                    class="w3-closebtn w3-padding w3-margin-right w3-medium">x</span>
+                    <img src="img_avatar2.png" class="w3-left w3-circle w3-margin-right" style="width:60px" alt="Cart Item 2">
+                    <span class="w3-xlarge">Item 1</span><br>
+                    <span>Description</span>
+                  </li>
+                  <li class="w3-padding-hor-16 w3-hover-pale-red">
+                    <span onclick="this.parentElement.style.display='none'"
+                    class="w3-closebtn w3-padding w3-margin-right w3-medium">x</span>
+                    <img src="img_avatar5.png" class="w3-left w3-circle w3-margin-right" style="width:60px" alt="Cart Item 2">
+                    <span class="w3-xlarge">Item 2</span><br>
+                    <span>Description</span>
+                  </li>
+                  <li class="w3-padding-hor-16 w3-hover-pale-red">
+                    <span onclick="this.parentElement.style.display='none'"
+                    class="w3-closebtn w3-padding w3-margin-right w3-medium">x</span>
+                    <img src="img_avatar6.png" class="w3-left w3-circle w3-margin-right" style="width:60px" alt="Cart Item 3">
+                    <span class="w3-xlarge">Item 3</span><br>
+                    <span>Description</span>
+                  </li>
+                </ul>
+
+                <div class="w3-center w3-margin-top"><h2>Checkout with:</h2></div>
+                <div class="w3-container w3-center"><a href="https://www.paypal.com"><img src="images/paypal.png" alt="PayPal Checkout"></a></div>
+                <div class="w3-container w3-border-top w3-padding-hor-16 w3-light-grey">
+                  <button onclick="document.getElementById('checkout').style.display='none'" type="button" class="w3-btn w3-red">Cancel</button>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- Hidden Modal Items Above -->
+
+        <!-- Body Ends Here -->
+
+    </div>
+
+    <div id="full_footer">
+
+      <footer class="w3-container cust_footer">
+
+          <p class="w3-left padd-left"><a class="no_line" href="index.html">Home</a> | <a class="no_line" href="about.html">About</a> | <a class="no_line" href="contact.html">Contact</a></p>
+
+      </footer>
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,199 @@
+/*Header*/
+#logo {
+  float: left;
+  margin-right: 10px;
+  font-size: 2.5em;
+  color: red;
+  letter-spacing: -1px;
+  font-weight: bold;
+}
+
+#logo:hover {
+  color: purple;
+  text-decoration: none;
+}
+
+.search {
+    text-align: center;
+    margin: 5px 5px;
+    color: black;
+    background-image: url("search-icon.png");
+}
+
+#full_navbar {
+
+}
+
+.cust_navbar {
+  background-color: rgb(160,0,0);
+  color: white;
+}
+
+/*Body*/
+.padd-left {
+  padding-left: 125px;
+}
+
+.padd-right {
+  padding-right: 125px;
+}
+
+.no_line {
+  text-decoration: none;
+}
+
+.cart {
+  padding: 3px;
+  margin: 0px;
+  text-align: center;
+}
+
+.checkout {
+  text-align: center;
+}
+
+.checkout:hover {
+  text-decoration: underline;
+  font-size: 20px;
+}
+
+#spacer {
+  padding: 50px 0 50px 0;
+}
+
+.sidebars {
+  width: 80%;
+  margin: auto;
+}
+
+.store_h1 {
+  color: #740001;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.social_icons {
+  float: right;
+  font-size: 40px;
+  padding-top: 15px;
+  color: rgb(160,0,0);
+  margin: -10px;
+}
+
+.fa-twitter-square:hover {
+  color: #00aced;
+}
+
+.fa-facebook-square:hover {
+  color: #3b5998;
+}
+
+.fa-instagram:hover {
+  color: #517fa4;
+}
+
+.fa-pinterest-square:hover {
+  color: #cb2027;
+}
+
+#flip1, #flip2, #flip3, #flip4, #flip5, #flip6, #close_all {
+    cursor: pointer;
+}
+
+.avatar {
+  font-size: 100px;
+}
+
+/* Contact Form */
+#wrap {
+  background: 	#fff5ee;
+  border: 5px solid #ae0001;
+  margin: auto;
+  width: 40%;
+  min-width: 70%;
+  color: #740001;
+  font: 21px 'Helvetica', 'Arial', sans-serif;
+}
+
+.contact_h1 {
+  color: #740001;
+  font-size: 48px;
+  font-weight: normal;
+  margin: 25px 5px 5px 15px;
+  text-align: center;
+  display: inline;
+}
+
+.contact_form {
+  background: #FFF;
+  border: 3px solid #ae0001;
+  font: inherit;
+  font-size: 16px;
+  line-height: 29px;
+  min-height: 30px;
+  padding: 5px 10px;
+  width: 60%;
+  min-width: 80%;
+}
+
+form {
+  padding: 0;
+  margin: 0 0 20px;
+}
+table {
+  margin: 0 auto;
+}
+tr, td, textarea {
+  margin: 0;
+  padding: 0;
+}
+td {
+  padding: 0 0 5px;
+}
+tr td:first-child {
+  padding-right: 10px;
+  padding-top: 11px;
+  text-align: right;
+  vertical-align: top;
+}
+
+textarea {
+  height: 240px;
+  resize: vertical;
+}
+
+.contact_message {
+  color: #740001;
+  font: 21px 'Helvetica', 'Arial', sans-serif;
+  margin: auto;
+  text-align: center;
+  padding-top: 10px;
+}
+
+/*Footer*/
+#full_footer {
+
+}
+
+.cust_footer {
+  background-color: rgb(160,0,0);
+  color: white;
+  padding-left: 16px;
+  text-decoration: none;
+}
+
+.contact_h2 {
+	color: #740001;
+	font-size: 28px;
+	font-weight: normal;
+	margin: 20px 0px 0px 15px;
+	text-align: center;
+}
+.address {
+	color: #740001;
+	font-size: 20px;
+	font-weight: normal;
+	margin: 20px 0px 0px 15px;
+	text-align: center;
+}
